@@ -16,6 +16,3 @@ teachers = {
     "dragos" : "https://us02web.zoom.us/j/89293270407",
     "popa" : "https://econ-ubbcluj-ro.zoom.us/j/2464274226"
 }
-
-def acces(GROUP, LANG, SEMIG):
-    print(GROUP, LANG, SEMIG)

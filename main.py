@@ -1,4 +1,5 @@
 import json
+import acces_zoom as az
 
 groups = ['1','2','3','4','5']
 langs  = {
@@ -57,7 +58,12 @@ def std_data():
                 json.dump(config, file)
         else:
             std_data()
-            
+
 if __name__ == '__main__':
     reset()
     std_data()
+
+    with open("config.json", "r") as file:
+        config = json.load(file)
+        
+    az.acces(config["GROUP"], config["LANG"], config["SEMIG"],)

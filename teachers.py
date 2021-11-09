@@ -14,5 +14,13 @@ teachers = {
     "mocean" : "https://us02web.zoom.us/j/82132881943",
     "scortar" : "https://us02web.zoom.us/j/7330822708",
     "dragos" : "https://us02web.zoom.us/j/89293270407",
-    "popa" : "https://econ-ubbcluj-ro.zoom.us/j/2464274226"
+    "popa" : "https://econ-ubbcluj-ro.zoom.us/j/2464274226",
+    "horvath" : "https://us02web.zoom.us/j/87078524044",
+    "beleiu" : "https://us02web.zoom.us/j/81457708374",
+    "cirstea" : "https://us02web.zoom.us/j/8615513827",
+    "dan" : "https://econ-ubbcluj-ro.zoom.us/j/89949821581",
+    "rovinaru" : "https://us02web.zoom.us/j/8816292962",
+    "inceu" : "https://econ-ubbcluj-ro.zoom.us/j/81980645505",
+    "ilie" : "https://us02web.zoom.us/j/2258130159",
+    "manolachi" : "https://us02web.zoom.us/j/89261903467"
 }

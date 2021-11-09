@@ -1,87 +1,112 @@
 import time
 import webbrowser
 import teachers as t
+import clock
 
-tm = time.localtime()
+tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
 
 def tuesday(GROUP, LANG, SEMIG):
-    # if (tm.tm_hour >= 7 or tm.tm_hour >= 8) and (tm.tm_hour <= 9 and tm.tm_min <= 30):
-    #     if GROUP == '1':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '2':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '3':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '4':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '5':
-    #         webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 9 and tm.tm_min >= 39) or tm.tm_hour >= 10) and ((tm.tm_hour < 11) or (tm.tm_hour <= 11 and tm.tm_min <= 10)):
+    if tm > clock.clock(7, 59) and tm < clock.clock(9, 30):
+        if GROUP == '1':
+            return 0
+        if GROUP == '2':
+            return 0
+        if GROUP == '3':
+            return 0
+        if GROUP == '4':
+            return 0
+        if GROUP == '5':
+            return 0
+
+    elif tm > clock.clock(9, 39) and tm < clock.clock(11, 10):
         if GROUP == '1':
             webbrowser.open(t.teachers["cuceu"])
         if GROUP == '2':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '3':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '4':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '5':
-            webbrowser.open(t.teachers["cuceu"])
-    elif ((tm.tm_hour >= 11 and tm.tm_min >= 19) or tm.tm_hour >= 12) and (tm.tm_hour < 13):
+            return 0
+
+    elif tm > clock.clock(11, 19) and tm < clock.clock(12, 50):
         if GROUP == '1':
-            webbrowser.open(t.teachers["silaghi"])
+            webbrowser.open(t.teachers["beleiu"])
         if GROUP == '2':
-            webbrowser.open(t.teachers["silaghi"])
+            webbrowser.open(t.teachers["beleiu"])
         if GROUP == '3':
-            webbrowser.open(t.teachers["silaghi"])
+            webbrowser.open(t.teachers["beleiu"])
         if GROUP == '4':
-            webbrowser.open(t.teachers["silaghi"])
+            webbrowser.open(t.teachers["beleiu"])
         if GROUP == '5':
-            webbrowser.open(t.teachers["silaghi"])
-    elif (tm.tm_hour >= 13) and (tm.tm_hour <= 14 or (tm.tm_hour <= 15 and tm.tm_min <= 40)):
+            webbrowser.open(t.teachers["beleiu"])
+
+    elif tm > clock.clock(13, 59) and tm < clock.clock(15, 30):
         if GROUP == '1':
-            webbrowser.open(t.teachers[""])
+            return 0
+
         if GROUP == '2':
-            webbrowser.open(t.teachers[""])
+            if LANG == '1':
+                webbrowser.open(t.teachers["ciupe"])
+
         if GROUP == '3':
-            webbrowser.open(t.teachers[""])
+            webbrowser.open(t.teachers["cirstea"])
+
         if GROUP == '4':
-            webbrowser.open(t.teachers[""])
+            if SEMIG == 1:
+                webbrowser.open(t.teachers["muresan"])
+            if SEMIG == 2:
+                webbrowser.open(t.teachers["pop"])
+
         if GROUP == '5':
-            webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 15 and tm.tm_min >= 39) or tm.tm_hour >= 16) and (tm.tm_hour < 17 or (tm.tm_hour <= 17 and tm.tm_min <= 10)):
+            week = input("SI = 1 or SP = 2")
+            if week == 1:
+                webbrowser.open(t.teachers["dan"])
+            else:
+                webbrowser.open(t.teachers["cuceu"])
+
+    elif tm > clock.clock(15, 39) and tm < clock.clock(17, 10):
         if GROUP == '1':
-            webbrowser.open(t.teachers[""])
+            return 0
         if GROUP == '2':
-            webbrowser.open(t.teachers[""])
+            webbrowser.open(t.teachers["filip"])
         if GROUP == '3':
-            webbrowser.open(t.teachers[""])
+            webbrowser.open(t.teachers["scridon"])
         if GROUP == '4':
-            webbrowser.open(t.teachers[""])
+            if LANG == 1:
+                webbrowser.open(t.teachers["ciupe"])
         if GROUP == '5':
-            webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 17 and tm.tm_min >= 19) or tm.tm_hour >= 18) and (tm.tm_hour < 18 or (tm.tm_hour <= 18 and tm.tm_min <= 30)):
+            if SEMIG == 1:
+                webbrowser.open(t.teachers["muresan"])
+            if SEMIG == 2:
+                webbrowser.open(t.teachers["pop"])
+
+    elif tm > clock.clock(17, 19) and tm < clock.clock(18, 50):
         if GROUP == '1':
-            webbrowser.open(t.teachers[""])
+            return 0
         if GROUP == '2':
-            webbrowser.open(t.teachers[""])
+            return 0
         if GROUP == '3':
-            webbrowser.open(t.teachers[""])
+            if SEMIG == 2:
+                webbrowser.open(t.teachers["pop"])
         if GROUP == '4':
-            webbrowser.open(t.teachers[""])
+            webbrowser.open(t.teachers["scridon"])
         if GROUP == '5':
-            webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 18 and tm.tm_min >= 59) or tm.tm_hour >= 19) and (tm.tm_hour <= 21):
+            webbrowser.open(t.teachers["cirstea"])
+
+    elif tm > clock.clock(18, 59) and tm < clock.clock(20, 30):
         if GROUP == '1':
-            webbrowser.open(t.teachers[""])
+            return 0
         if GROUP == '2':
-            webbrowser.open(t.teachers[""])
+            return 0
         if GROUP == '3':
-            webbrowser.open(t.teachers[""])
+            return 0
         if GROUP == '4':
-            webbrowser.open(t.teachers[""])
+            webbrowser.open(t.teachers["cirstea"])
         if GROUP == '5':
-            webbrowser.open(t.teachers[""])
+            webbrowser.open(t.teachers["scridon"])
+
     else:
-        tm.sleep(30)
-        tuesday(GROUP, LANG, SEMIG)
+        time.sleep(30)
+        monday(GROUP, LANG, SEMIG)

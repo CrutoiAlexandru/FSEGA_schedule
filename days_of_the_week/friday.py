@@ -1,87 +1,41 @@
 import time
 import webbrowser
 import teachers as t
+import clock
 
-tm = time.localtime()
+tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
 
-def monday(GROUP, LANG, SEMIG):
-    # if (tm.tm_hour >= 7 or tm.tm_hour >= 8) and (tm.tm_hour <= 9 and tm.tm_min <= 30):
-    #     if GROUP == '1':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '2':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '3':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '4':
-    #         webbrowser.open(t.teachers[""])
-    #     if GROUP == '5':
-    #         webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 9 and tm.tm_min >= 39) or tm.tm_hour >= 10) and ((tm.tm_hour < 11) or (tm.tm_hour <= 11 and tm.tm_min <= 10)):
+def friday(GROUP, LANG, SEMIG):
+    if tm > clock.clock(7, 59) and tm < clock.clock(9, 30):
         if GROUP == '1':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '2':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '3':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '4':
-            webbrowser.open(t.teachers["cuceu"])
+            return 0
         if GROUP == '5':
-            webbrowser.open(t.teachers["cuceu"])
-    elif ((tm.tm_hour >= 11 and tm.tm_min >= 19) or tm.tm_hour >= 12) and (tm.tm_hour < 13):
-        if GROUP == '1':
-            webbrowser.open(t.teachers["silaghi"])
-        if GROUP == '2':
-            webbrowser.open(t.teachers["silaghi"])
-        if GROUP == '3':
-            webbrowser.open(t.teachers["silaghi"])
-        if GROUP == '4':
-            webbrowser.open(t.teachers["silaghi"])
-        if GROUP == '5':
-            webbrowser.open(t.teachers["silaghi"])
-    elif (tm.tm_hour >= 13) and (tm.tm_hour <= 14 or (tm.tm_hour <= 15 and tm.tm_min <= 40)):
-        if GROUP == '1':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '2':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '3':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '4':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '5':
-            webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 15 and tm.tm_min >= 39) or tm.tm_hour >= 16) and (tm.tm_hour < 17 or (tm.tm_hour <= 17 and tm.tm_min <= 10)):
-        if GROUP == '1':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '2':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '3':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '4':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '5':
-            webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 17 and tm.tm_min >= 19) or tm.tm_hour >= 18) and (tm.tm_hour < 18 or (tm.tm_hour <= 18 and tm.tm_min <= 30)):
-        if GROUP == '1':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '2':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '3':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '4':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '5':
-            webbrowser.open(t.teachers[""])
-    elif ((tm.tm_hour >= 18 and tm.tm_min >= 59) or tm.tm_hour >= 19) and (tm.tm_hour <= 21):
-        if GROUP == '1':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '2':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '3':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '4':
-            webbrowser.open(t.teachers[""])
-        if GROUP == '5':
-            webbrowser.open(t.teachers[""])
+            return 0
+
+    elif tm > clock.clock(9, 39) and tm < clock.clock(11, 10):
+        webbrowser.open(t.teachers["dragos"])
+
+    elif tm > clock.clock(11, 19) and tm < clock.clock(12, 50):
+         webbrowser.open(t.teachers["popa"])
+
+    elif tm > clock.clock(13, 59) and tm < clock.clock(15, 30):
+        return 0
+
+    elif tm > clock.clock(15, 39) and tm < clock.clock(17, 10):
+        return 0
+
+    elif tm > clock.clock(17, 19) and tm < clock.clock(18, 50):
+        return 0
+
+    elif tm > clock.clock(18, 59) and tm < clock.clock(20, 30):
+        return 0
+
     else:
-        tm.sleep(30)
-        get_to_class(GROUP, LANG, SEMIG)
+        time.sleep(30)
+        monday(GROUP, LANG, SEMIG)

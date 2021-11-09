@@ -3,10 +3,10 @@ import coms
 import datetime   
 from os.path import exists
 import days_of_the_week.monday as monday
-# import days_of_the_week.tuesday as tuesday
-# import days_of_the_week.wednesday as wednesday
-# import days_of_the_week.thursday as thursday
-# import days_of_the_week.friday as friday
+import days_of_the_week.tuesday as tuesday
+import days_of_the_week.wednesday as wednesday
+import days_of_the_week.thursday as thursday
+import days_of_the_week.friday as friday
 
 
 if __name__ == '__main__':

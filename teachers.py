@@ -10,7 +10,7 @@ teachers = {
     "scridon" : "https://econ-ubbcluj-ro.zoom.us/j/84463849544",
     "muresan" : "https://econ-ubbcluj-ro.zoom.us/j/6599306666",
     "pop" : "https://econ-ubbcluj-ro.zoom.us/j/88051819074",
-    "crina" : "https://econ-ubbcluj-ro.zoom.us/j/83145158719",
+    "filip" : "https://econ-ubbcluj-ro.zoom.us/j/83145158719",
     "mocean" : "https://us02web.zoom.us/j/82132881943",
     "scortar" : "https://us02web.zoom.us/j/7330822708",
     "dragos" : "https://us02web.zoom.us/j/89293270407",

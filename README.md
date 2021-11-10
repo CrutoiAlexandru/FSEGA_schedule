@@ -11,7 +11,7 @@ The app is not that smart so whenever it is needed you have to provide the type 
 
 ## How to install it
 You will download this zip file:
-Linux:
+Linux:[fsega_schedule_linux_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v0.1.0/fsega_schedule_linux_x64.zip)
 Windows:[fsega_schedule_windows_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v0.1.0/fsega_schedule_windows_x64.zip)
 
 After you can make a shortcut to the executable and put it wherever you want(atm you have to do it alone).

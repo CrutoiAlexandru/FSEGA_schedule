@@ -54,9 +54,9 @@ def tuesday(GROUP, LANG, SEMIG):
             webbrowser.open(t.teachers["cirstea"])
 
         if GROUP == '4':
-            if SEMIG == 1:
+            if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
-            if SEMIG == 2:
+            if SEMIG == '2':
                 webbrowser.open(t.teachers["pop"])
 
         if GROUP == '5':
@@ -74,12 +74,12 @@ def tuesday(GROUP, LANG, SEMIG):
         if GROUP == '3':
             webbrowser.open(t.teachers["scridon"])
         if GROUP == '4':
-            if LANG == 1:
+            if LANG == '1':
                 webbrowser.open(t.teachers["ciupe"])
         if GROUP == '5':
-            if SEMIG == 1:
+            if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
-            if SEMIG == 2:
+            if SEMIG == '2':
                 webbrowser.open(t.teachers["pop"])
 
     elif tm > clock.clock(17, 19) and tm < clock.clock(18, 50):
@@ -88,7 +88,7 @@ def tuesday(GROUP, LANG, SEMIG):
         if GROUP == '2':
             return 0
         if GROUP == '3':
-            if SEMIG == 2:
+            if SEMIG == '2':
                 webbrowser.open(t.teachers["pop"])
         if GROUP == '4':
             webbrowser.open(t.teachers["scridon"])

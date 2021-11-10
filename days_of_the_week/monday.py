@@ -109,7 +109,7 @@ def monday(GROUP, LANG, SEMIG):
         if GROUP == '2':
             return 0
         if GROUP == '3':
-            if SEMIG == 1:
+            if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
         if GROUP == '4':
             return 0
@@ -120,7 +120,7 @@ def monday(GROUP, LANG, SEMIG):
         if GROUP == '1':
             webbrowser.open(t.teachers["scridon"])
         if GROUP == '2':
-            if SEMIG == 1:
+            if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
         if GROUP == '3':
             webbrowser.open(t.teachers["ciupe"])
@@ -131,9 +131,9 @@ def monday(GROUP, LANG, SEMIG):
 
     elif tm > clock.clock(18, 59) and tm < clock.clock(20, 30):
         if GROUP == '1':
-            if SEMIG == 1:
+            if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
-            if SEMIG == 2:
+            if SEMIG == '2':
                 webbrowser.open(t.teachers["pop"])
         if GROUP == '2':
             webbrowser.open(t.teachers["scridon"])

@@ -22,7 +22,7 @@ def wednesday(GROUP, LANG, SEMIG):
         if GROUP == '1':
             webbrowser.open(t.teachers["filip"])
         if GROUP == '2':
-            if SEMIG == 2:
+            if SEMIG == '2':
                 webbrowser.open(t.teachers["pop"])
         if GROUP == '3':
             return 0

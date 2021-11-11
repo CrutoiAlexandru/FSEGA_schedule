@@ -23,4 +23,4 @@ It was a quick one and done, but it still doesn't excuse the way it was coded.
 The code is very raw, it uses perdeterminated dictionaries and alot of conditions in order to work.
 The dictionaries and conditions are based on a schedule given by FSEGA.
 
-I will probably change it in the future and make mor readable.
+I will probably change it in the future and make more readable.

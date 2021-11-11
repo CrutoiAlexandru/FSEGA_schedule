@@ -44,13 +44,13 @@ def wednesday(GROUP, LANG, SEMIG):
             webbrowser.open(t.teachers["filip"])
 
     elif tm > clock.clock(13, 59) and tm < clock.clock(15, 30):
-        if input("Doctrine = 1 or Fiscalitate = 2") == 1:
+        if input("Doctrine = 1 or Fiscalitate = 2") == '1':
             webbrowser.open(t.teachers["rovinaru"])
         else:
             webbrowser.open(t.teachers["inceu"])
 
     elif tm > clock.clock(15, 39) and tm < clock.clock(17, 10):
-        if input("Management = 1 or Doctrine = 2") == 1:
+        if input("Management = 1 or Doctrine = 2") == '1':
             webbrowser.open(t.teachers["ilie"])
         else:
             webbrowser.open(t.teachers["manolachi"])

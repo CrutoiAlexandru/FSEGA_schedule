@@ -62,7 +62,11 @@ def bad_teacher():
     messagebox.showinfo(title = "Info", message = "Eu nu am optionalul si tanti nu da linkul pe orar csf")
 
 def week_type():
-    messagebox.showinfo(title = "Week type", message = "What week is it?")
+    a = messagebox.askquestion(title = "Week type", message = "Este saptamana para?")
+    if a == "yes":
+        return 1
+    else:
+        return 0
 
 def main_window():
     root = Tk()

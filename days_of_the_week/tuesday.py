@@ -48,8 +48,7 @@ def tuesday(GROUP, LANG, SEMIG):
                 exit()
 
         if GROUP == '5':
-            week = input("SI = 1 or SP = 2")
-            if week == 1:
+            if main_window.week_type() == 0:
                 webbrowser.open(t.teachers["dan"])
                 exit()
             else:

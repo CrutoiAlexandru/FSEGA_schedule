@@ -16,14 +16,14 @@ def thursday(GROUP, LANG, SEMIG):
             webbrowser.open(t.teachers["mocean"])
             exit()
         if GROUP == '2':
-            if input("SI = 1 or SP = 2") == '1':
+            if main_window.week_type() == '0':
                 webbrowser.open(t.teachers["scortar"])
                 exit()
             else:
                 webbrowser.open(t.teachers["cuceu"])
                 exit()
         if GROUP == '3':
-            if input("SI = 1 or SP = 2") == '1':
+            if main_window.week_type() == '0':
                 webbrowser.open(t.teachers["cuceu"])
                 exit()
             else:
@@ -35,7 +35,7 @@ def thursday(GROUP, LANG, SEMIG):
 
     elif tm > clock.clock(11, 19) and tm < clock.clock(12, 50):
         if GROUP == '1':
-            if input("SI = 1 or SP = 2") == '1':
+            if main_window.week_type() == '0':
                 webbrowser.open(t.teachers["scortar"])
                 exit()
             else:
@@ -48,7 +48,7 @@ def thursday(GROUP, LANG, SEMIG):
             webbrowser.open(t.teachers["mocean"])
             exit()
         if GROUP == '4':
-            if input("SI = 1 or SP = 2") == '1':
+            if main_window.week_type() == '0':
                 webbrowser.open(t.teachers["cuceu"])
                 exit()
             else:

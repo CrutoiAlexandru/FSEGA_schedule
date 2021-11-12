@@ -42,7 +42,7 @@ class MainWindow(Frame):
         if day == 1:
             tuesday.tuesday(config["GROUP"], config["LANG"], config["SEMIG"])
         if day == 2:
-            wednesday.wednesday(config["GROUP"], config["LANG"], config["SEMIG"])
+            wednesday.wednesday(config["GROUP"], config["LANG"], config["SEMIG"], config["OPTIONAL"])
         if day == 3:
             thursday.thursday(config["GROUP"], config["LANG"], config["SEMIG"])
         if day == 4:
@@ -60,6 +60,9 @@ def noclass():
 
 def bad_teacher():
     messagebox.showinfo(title = "Info", message = "Eu nu am optionalul si tanti nu da linkul pe orar csf")
+
+def week_type():
+    messagebox.showinfo(title = "Week type", message = "What week is it?")
 
 def main_window():
     root = Tk()

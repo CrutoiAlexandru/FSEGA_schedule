@@ -63,6 +63,24 @@ class StdDataWindow(Frame):
         semig2 = Button(self, text="2", width = int(width*0.01), height = int(height*0.01), command = self.semig2)
         semig2.grid(row = 4, column = 2)
 
+        #choose your optional classes
+        #only the ones that need management
+        #support for only one classes
+        opt_label = Label(self, text="Optional:")
+        opt_label.grid(row = 6, column = 0)
+
+        opt1 = Button(self, text="Doctrine", width = int(width*0.01), height = int(height*0.01), command = self.opt1)
+        opt1.grid(row = 6, column = 1)
+
+        opt2 = Button(self, text="Management", width = int(width*0.01), height = int(height*0.01), command = self.opt2)
+        opt2.grid(row = 6, column = 2)
+
+        opt3 = Button(self, text="Fiscalitate", width = int(width*0.01), height = int(height*0.01), command = self.opt3)
+        opt3.grid(row = 6, column = 3)
+
+        opt4 = Button(self, text="Other", width = int(width*0.01), height = int(height*0.01), command = self.opt4)
+        opt4.grid(row = 6, column = 4)
+
     def group1(self):
         coms.std_group(1)
 
@@ -134,6 +152,30 @@ class StdDataWindow(Frame):
 
         lbl = Label(self, text="Semigroup: 2")
         lbl.grid(row = 5, column = 1)
+
+    def opt1(self):
+        coms.std_optional(1)
+
+        lbl = Label(self, text="Optional: Doctrine")
+        lbl.grid(row = 7, column = 1)
+
+    def opt2(self):
+        coms.std_optional(2)
+
+        lbl = Label(self, text="Optional: Management")
+        lbl.grid(row = 7, column = 1)
+
+    def opt3(self):
+        coms.std_optional(3)
+
+        lbl = Label(self, text="Optional: Fiscalitate")
+        lbl.grid(row = 7, column = 1)
+
+    def opt4(self):
+        coms.std_optional(4)
+
+        lbl = Label(self, text="Optional: Other")
+        lbl.grid(row = 7, column = 1)
         
 def window():
     root = Tk()
@@ -146,7 +188,7 @@ def window():
 
     # root.geometry(str(0) + 'x' + str(0))
     root.grid_columnconfigure((0, 1), weight = 1)
-    root.minsize(int(width*0.22)*3, int(width*0.02)*17)
-    root.maxsize(int(width*0.22)*3, int(width*0.02)*17)
+    root.minsize(int(width*0.22)*3, int(width*0.02)*25)
+    root.maxsize(int(width*0.22)*3, int(width*0.02)*25)
 
     root.mainloop()

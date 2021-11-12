@@ -6,7 +6,7 @@ import gui.main_window as main_window
 
 tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
 
-def wednesday(GROUP, LANG, SEMIG):
+def wednesday(GROUP, LANG, SEMIG, OPTIONAL):
     if tm > clock.clock(9, 39) and tm < clock.clock(11, 10):
         if GROUP == '1':
             webbrowser.open(t.teachers["filip"])
@@ -34,18 +34,18 @@ def wednesday(GROUP, LANG, SEMIG):
             exit()
 
     elif tm > clock.clock(13, 59) and tm < clock.clock(15, 30):
-        if input("Doctrine = 1 or Fiscalitate = 2") == '1':
+        if OPTIONAL == '1':
             webbrowser.open(t.teachers["rovinaru"])
             exit()
-        else:
+        if OPTIONAL == '3':
             webbrowser.open(t.teachers["inceu"])
             exit()
 
     elif tm > clock.clock(15, 39) and tm < clock.clock(17, 10):
-        if input("Management = 1 or Doctrine = 2") == '1':
+        if OPTIONAL == '2':
             webbrowser.open(t.teachers["ilie"])
             exit()
-        else:
+        if OPTIONAL == '1':
             webbrowser.open(t.teachers["manolachi"])
             exit()
 

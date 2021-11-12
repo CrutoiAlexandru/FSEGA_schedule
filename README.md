@@ -11,7 +11,7 @@ If you find any bugs or mistakes please report them to me, the app still needs t
 ## How to install it
 You will download the zip file your system needs:
 Linux:[fsega_schedule_linux_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v1.0.0/fsega_schedule_linux_x64.zip)
-Windows:[fsega_schedule_windows_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v1.0.0/fsega_schedule_windows_x64.zip)
+Windows:[fsega_schedule_windows_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v1.0.0/fsega_schedule_windows_x64.7z)
 
 After you can make a shortcut to the executable and put it wherever you want(atm you have to do it alone). The executable file is found in the main folder called FsegaSchedule.
 

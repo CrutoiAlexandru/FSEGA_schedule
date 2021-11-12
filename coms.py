@@ -8,7 +8,7 @@ langs  = {
     '4':'french',
     '5':'spanish'
 }
-semig = ['1','2']
+semigs = ['1','2']
 
 def init_json():
     config = {
@@ -20,50 +20,32 @@ def init_json():
     with open("config.json", "w") as file:
         json.dump(config, file)
 
-def reset():
+def std_group(group):
+    group = str(group)
+
     with open("config.json", "r") as file:
         config = json.load(file)
-
-    config["GROUP"] = 'none' 
-    config["LANG"]  = 'none'
-    config["SEMIG"] = 'none'
-
+    
+    config["GROUP"] = group
     with open("config.json", "w") as file:
-                json.dump(config, file)
+        json.dump(config, file)
+    
+def std_lang(lang):
+    lang = str(lang)
 
-def std_data():
     with open("config.json", "r") as file:
         config = json.load(file)
-    
-    if config["GROUP"] == "none":
-        print("Choose your group from: " + str(groups))
-        inp = input()
 
-        if inp in groups:
-            config["GROUP"] = inp
-            with open("config.json", "w") as file:
-                json.dump(config, file)
-        else:
-            std_data()
-    
-    if config["LANG"] == "none":
-        print("Choose your language from: " + str(langs))
-        inp = input()
+    config["LANG"] = lang
+    with open("config.json", "w") as file:
+        json.dump(config, file)
 
-        if inp in langs:
-            config["LANG"] = inp
-            with open("config.json", "w") as file:
-                json.dump(config, file)
-        else:
-            std_data()
+def std_semig(semig):
+    semig = str(semig)
 
-    if config["SEMIG"] == "none":
-        print("Choose your semigroup from: " + str(semig))
-        inp = input()
+    with open("config.json", "r") as file:
+        config = json.load(file)
 
-        if inp in semig:
-            config["SEMIG"] = inp
-            with open("config.json", "w") as file:
-                json.dump(config, file)
-        else:
-            std_data()
+    config["SEMIG"] = semig
+    with open("config.json", "w") as file:
+        json.dump(config, file)

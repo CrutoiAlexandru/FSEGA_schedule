@@ -2,148 +2,166 @@ import time
 import webbrowser
 import teachers as t
 import clock
+import gui.main_window as main_window
 
 tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
 
 def monday(GROUP, LANG, SEMIG):
-    if tm > clock.clock(7, 59) and tm < clock.clock(9, 30):
-        if GROUP == '1':
-            return 0
-        if GROUP == '2':
-            return 0
-        if GROUP == '3':
-            return 0
-        if GROUP == '4':
-            return 0
-        if GROUP == '5':
-            return 0
-
-    elif tm > clock.clock(9, 39) and tm < clock.clock(11, 10):
+    if tm > clock.clock(9, 39) and tm < clock.clock(11, 10):
         if GROUP == '1':
             webbrowser.open(t.teachers["cuceu"])
+            exit()
         if GROUP == '2':
             webbrowser.open(t.teachers["cuceu"])
+            exit()
         if GROUP == '3':
             webbrowser.open(t.teachers["cuceu"])
+            exit()
         if GROUP == '4':
             webbrowser.open(t.teachers["cuceu"])
+            exit()
         if GROUP == '5':
             webbrowser.open(t.teachers["cuceu"])
+            exit()
 
     elif tm > clock.clock(11, 19) and tm < clock.clock(12, 50):
         if GROUP == '1':
             webbrowser.open(t.teachers["silaghi"])
+            exit()
         if GROUP == '2':
             webbrowser.open(t.teachers["silaghi"])
+            exit()
         if GROUP == '3':
             webbrowser.open(t.teachers["silaghi"])
+            exit()
         if GROUP == '4':
             webbrowser.open(t.teachers["silaghi"])
+            exit()
         if GROUP == '5':
             webbrowser.open(t.teachers["silaghi"])
+            exit()
 
     elif tm > clock.clock(13, 59) and tm < clock.clock(15, 30):
         if GROUP == '1':
-            if LANG == '1':
-                return 0
             if LANG == '2':
                 webbrowser.open(t.teachers["parasca"])
+                exit()
             if LANG == '3':
                 webbrowser.open(t.teachers["feurdean"])
+                exit()
             if LANG == '4':
                 webbrowser.open(t.teachers["sera"])
+                exit()
             if LANG == '5':
                 webbrowser.open(t.teachers["tocalachis"])
+                exit()
 
         if GROUP == '2':
-            if LANG == '1':
-                return 0
             if LANG == '2':
                 webbrowser.open(t.teachers["parasca"])
+                exit()
             if LANG == '3':
                 webbrowser.open(t.teachers["feurdean"])
+                exit()
             if LANG == '4':
                 webbrowser.open(t.teachers["sera"])
+                exit()
             if LANG == '5':
                 webbrowser.open(t.teachers["tocalachis"])
+                exit()
 
         if GROUP == '3':
-            if LANG == '1':
-                return 0
             if LANG == '2':
                 webbrowser.open(t.teachers["parasca"])
+                exit()
             if LANG == '3':
                 webbrowser.open(t.teachers["feurdean"])
+                exit()
             if LANG == '4':
                 webbrowser.open(t.teachers["sera"])
+                exit()
             if LANG == '5':
                 webbrowser.open(t.teachers["tocalachis"])
+                exit()
 
         if GROUP == '4':
-            if LANG == '1':
-                return 0
             if LANG == '2':
                 webbrowser.open(t.teachers["parasca"])
+                exit()
             if LANG == '3':
                 webbrowser.open(t.teachers["feurdean"])
+                exit()
             if LANG == '4':
                 webbrowser.open(t.teachers["sera"])
+                exit()
             if LANG == '5':
                 webbrowser.open(t.teachers["tocalachis"])
+                exit()
 
         if GROUP == '5':
             if LANG == '1':
                 webbrowser.open(t.teachers["ciupe"])
+                exit()
             if LANG == '2':
                 webbrowser.open(t.teachers["parasca"])
+                exit()
             if LANG == '3':
                 webbrowser.open(t.teachers["feurdean"])
+                exit()
             if LANG == '4':
                 webbrowser.open(t.teachers["sera"])
+                exit()
             if LANG == '5':
                 webbrowser.open(t.teachers["tocalachis"])
+                exit()
 
     elif tm > clock.clock(15, 39) and tm < clock.clock(17, 10):
         if GROUP == '1':
             webbrowser.open(t.teachers["ciupe"])
-        if GROUP == '2':
-            return 0
+            exit()
         if GROUP == '3':
             if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
-        if GROUP == '4':
-            return 0
-        if GROUP == '5':
-            return 0
+                exit()
 
     elif tm > clock.clock(17, 19) and tm < clock.clock(18, 50):
         if GROUP == '1':
             webbrowser.open(t.teachers["scridon"])
+            exit()
         if GROUP == '2':
             if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
+                exit()
         if GROUP == '3':
             webbrowser.open(t.teachers["ciupe"])
+            exit()
         if GROUP == '4':
             webbrowser.open(t.teachers["horvath"])
+            exit()
         if GROUP == '5':
             webbrowser.open(t.teachers["horvath"])
+            exit()
 
     elif tm > clock.clock(18, 59) and tm < clock.clock(20, 30):
         if GROUP == '1':
             if SEMIG == '1':
                 webbrowser.open(t.teachers["muresan"])
+                exit()
             if SEMIG == '2':
                 webbrowser.open(t.teachers["pop"])
+                exit()
         if GROUP == '2':
             webbrowser.open(t.teachers["scridon"])
+            exit()
         if GROUP == '3':
             webbrowser.open(t.teachers["horvath"])
+            exit()
         if GROUP == '4':
             webbrowser.open(t.teachers["horvath"])
+            exit()
         if GROUP == '5':
             webbrowser.open(t.teachers["horvath"])
+            exit()
 
     else:
-        time.sleep(30)
-        monday(GROUP, LANG, SEMIG)
+        main_window.noclass()     

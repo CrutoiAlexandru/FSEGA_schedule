@@ -2,19 +2,18 @@
 Automatic FSEGA classes scheduler. Don't want to click so much to get to your classes? Use this
 
 ## How it works
-The app is at the moment only a terminal based application, the plan is to change it to something more apealling while keeping it simple.
+At the first opening it asks you for your group, the language you study, the semigroup you are in and the optional class you are taking. After the first run it will never ask you these questions again, but you can at all times change them from the gui option about student info.
 
-At the first opening it asks you for your group, the language you study and the semigroup you are in(after the first run it will never ask you these quiestions again,
-it will store your data in a config.json file and at the moment you can only change them by opening this file and manually overwriting them.
+The app is not that smart so whenever it is needed you have to provide the type of the week(odd or even). A pop up window will appear asking if the current week is even, if the answer is no it will assume otherwise. 
 
-The app is not that smart so whenever it is needed you have to provide the type of the week(odd or even)
+If you find any bugs or mistakes please report them to me, the app still needs to be tested more.
 
 ## How to install it
-You will download this zip file:
-Linux:[fsega_schedule_linux_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v0.1.0/fsega_schedule_linux_x64.zip)
-Windows:[fsega_schedule_windows_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v0.1.0/fsega_schedule_windows_x64.zip)
+You will download the zip file your system needs:
+Linux:[fsega_schedule_linux_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v1.0.0/fsega_schedule_linux_x64.zip)
+Windows:[fsega_schedule_windows_x64](https://github.com/CrutoiAlexandru/FSEGA_schedule/releases/download/v1.0.0/fsega_schedule_windows_x64.7z)
 
-After you can make a shortcut to the executable and put it wherever you want(atm you have to do it alone).
+After you can make a shortcut to the executable and put it wherever you want(atm you have to do it alone). The executable file is found in the main folder called FsegaSchedule.
 
 ## How the code works
 The schedule's code is very basic and at the moment it lacks in comments(like it has 0).

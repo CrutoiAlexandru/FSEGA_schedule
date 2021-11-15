@@ -4,9 +4,9 @@ import teachers as t
 import clock
 import gui.main_window as main_window
 
-tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
-
 def thursday(GROUP, LANG, SEMIG):
+    tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
+
     if tm > clock.clock(7, 59) and tm < clock.clock(9, 30):
         webbrowser.open(t.teachers["mocean"])
         exit()

@@ -4,9 +4,9 @@ import teachers as t
 import clock
 import gui.main_window as main_window
 
-tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
-
 def tuesday(GROUP, LANG, SEMIG):
+    tm = clock.clock(time.localtime().tm_hour, time.localtime().tm_min)
+
     if tm > clock.clock(9, 39) and tm < clock.clock(11, 10):
         if GROUP == '1':
             webbrowser.open(t.teachers["cuceu"])
